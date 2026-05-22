@@ -20,6 +20,16 @@ Example (do not paste; fill above):
 2.
 3.
 
+## Load-bearing assumptions (3 critical)
+
+> Playbook: identify the 3 assumptions the solution depends on most heavily. If any one is wrong, the idea breaks. Force the consequence column to be specific — "the product fails" is not specific.
+
+| # | Assumption | What must be true for it to hold | Consequence if it fails |
+|---|------------|----------------------------------|-------------------------|
+| 1 |            |                                  |                         |
+| 2 |            |                                  |                         |
+| 3 |            |                                  |                         |
+
 ## Risks to test first (highest-risk first)
 
 1.

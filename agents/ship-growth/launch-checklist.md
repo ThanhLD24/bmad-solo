@@ -26,3 +26,8 @@ argument-hint: "<surface: ph | hn | x | reddit | linkedin>"
 5. Capture surface-specific prep (e.g., PH hunter, HN title, X thread).
 6. Write `docs/growth/launch-log.md` from template.
 7. On launch day, update with: time launched, first-hour signups, first-hour comments.
+8. After launch goes live, drop the Phase 2 signal so the solo orchestrator detects ship state:
+   ```bash
+   mkdir -p .bmad-solo/signals && touch .bmad-solo/signals/launched
+   ```
+9. Log handoff to `ship-growth:feedback-loop` via `solo handoff`.

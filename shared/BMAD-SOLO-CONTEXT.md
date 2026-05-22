@@ -50,6 +50,9 @@ BMAD Solo is the lean variant of the BMAD (Breakthrough Method of Agile AI-Drive
 | TAM = "1% of $X billion" | Reject — demand bottom-up |
 | Prototype existence = validation | Name it: "this is a prop, not proof" |
 | "Users will love this" without interview quote | Demand specific evidence |
+| False PMF — Hacker News spike / founder's network / early-friend signups treated as PMF | Reject — apply Sean Ellis + effort test, check false-positive list in `prd-lite.md` |
+| Zero-friction scope creep — "of course we should add X" without user evidence | Reject — answer Scope Amendment Criteria in `prd-lite.md` or defer |
+| Insecure by inexperience — shipping AI-generated code without auth / input-validation / data-exposure review | Blocker — run `devsecops/pre-ship-scan` step 3 before any user touches the app |
 
 ## Solo-Specific Conventions
 
@@ -71,7 +74,7 @@ BMAD Solo is the lean variant of the BMAD (Breakthrough Method of Agile AI-Drive
 │   ├── handoff-log.md
 │   └── signals/{idea-validated,mvp-ready,launched}
 └── docs/
-    ├── idea/{idea-brief,interviews/,competitors,tam-som,trends,decision-go}.md
+    ├── idea/{idea-brief,interviews/,interview-synthesis,competitors,tam-som,trends,decision-go}.md
     ├── prd-lite.md
     ├── architecture.md
     ├── adr/

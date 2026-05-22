@@ -29,6 +29,22 @@ Check all of these:
 
 If any are missing, **list every missing artifact** and the command that produces it, then refuse to write a decision. No half-decisions.
 
+### Step 1b — Validate hypothesis format
+
+Open `docs/idea/idea-brief.md` and confirm all 4 fields are populated and non-trivial:
+
+- `WHO:` — specific segment (not "users", "people", "businesses")
+- `FREQUENCY:` — quantified (per day / week / month) or explicit "rarely"
+- `SEVERITY:` — concrete cost (time, money, lost opportunity)
+- `WORKAROUND:` — what the WHO does today (named tool / hack / spreadsheet / nothing)
+
+Quick check:
+```bash
+grep -E "^(WHO|FREQUENCY|SEVERITY|WORKAROUND):" docs/idea/idea-brief.md
+```
+
+If any field is missing, empty, or vague (one word, generic noun) → refuse to write a decision. Redirect to `hypothesis-sharpen`.
+
 ## Step 2 — Summarise evidence, CHALLENGES first
 
 Once all artifacts are present, present a summary in this order (this order matters — see `references/devils-advocate-mode.md`):

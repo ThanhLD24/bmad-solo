@@ -31,4 +31,4 @@ argument-hint: ""
    ## Sign-off
    - DevSecOps gate: PASS — <YYYY-MM-DD>
    ```
-5. Tell user to deploy. After deploy → handoff to `ship-growth:launch-checklist`.
+5. Tell user to deploy. After deploy → log handoff to `ship-growth:launch-checklist` via `solo handoff`.

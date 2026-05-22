@@ -29,4 +29,12 @@ argument-hint: "<path to story file>"
    - Update story file: `Status: done`
    - Append changelog line: `- <YYYY-MM-DD>: implemented (commits <range>)`
    - Commit story update
-7. Recommend next step: another story, or `tester-qe:run-quality-gate` if pre-ship.
+7. **Session log** — Playbook: persistent context prevents per-session drift. Append a short entry to project root `CLAUDE.md` (under a `## Session Log` section, create if missing):
+   ```
+   ### <YYYY-MM-DD> — <story slug>
+   - Built: <what shipped>
+   - Decisions: <any non-obvious choice + 1-line reason>
+   - Assumptions introduced: <any assumption a future session must respect>
+   ```
+   Five minutes per session — cheap insurance against architectural drift compounding across sessions.
+8. Recommend next step: another story, or `tester-qe:run-quality-gate` if pre-ship.
